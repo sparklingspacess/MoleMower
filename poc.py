@@ -133,7 +133,11 @@ def main():
     c.Call('DisconnectTunnel', empty, empty_pb2.Empty)
 
     print("Grabbing your auth-token...")
-    print(c.Call('GetWwwAuthToken', empty, StringValue))
+    token = c.Call('GetWwwAuthToken', empty, StringValue)
+    if c.Call('GetWwwAuthToken', empty, StringValue) is None:
+        print("You seem to have no auth-token")
+    else:
+        print(token)
 
     print("Disconnected, logging you out...")
     c.Call('LogoutAccount', empty, empty_pb2.Empty)
