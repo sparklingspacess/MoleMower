@@ -1,2 +1,2 @@
 # MoleMower
-mullvad vpn control vuln
+mullvad vpn misc vulnerability(s)
