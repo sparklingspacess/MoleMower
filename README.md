@@ -1,5 +1,6 @@
 # MoleMower
 mullvad vpn misc vulnerability(s)
+<br>
 *Should work on any device with Mullvad VPN running and logged in*
 
 <p align="center">
